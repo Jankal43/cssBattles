@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shapes</title>
+  <style>
+    body {
+      background-color: #151917;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .red-circle {
+      position: relative;
+      background-color: #D83A34;
+      border-radius: 50%;
+      width: 252px;
+      height: 250px;
+    }
+
+    .black-circle {
+      position: absolute;
+      top: 20px;
+      left: 21px;
+      background-color: #151917;
+      border-radius: 50%;
+      width: 210px;
+      height: 210px;
+    }
+
+    .red-triangle {
+      position: absolute;
+      top: 83px;
+      left: 42px;
+      width: 0;
+      height: 0;
+      border-left: 63px solid transparent;
+      border-right: 63px solid transparent;
+      border-bottom: 91px solid #D83A34;
+      background-color: transparent;
+    }
+
+    .red-triangle-rotated {
+      transform: rotate(180deg);
+      position: absolute;
+      top: 36px;
+      left: 41px;
+      width: 0;
+      height: 0;
+      border-left: 63px solid transparent;
+      border-right: 64px solid transparent;
+      border-bottom: 97px solid #D83A34;
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <div class="red-circle">
+    <div class="black-circle">
+      <div class="red-triangle"></div>
+      <div class="red-triangle-

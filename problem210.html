@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shapes</title>
+    <style>
+      body {
+        background-color: #151917;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .red-circle {
+        position: relative;
+        background-color: #d83a34;
+        border-radius: 50%;
+        width: 252px;
+        height: 250px;
+      }
+
+      .black-circle {
+        position: absolute;
+        top: 20px;
+        left: 21px;
+        background-color: #151917;
+        border-radius: 50%;
+        width: 210px;
+        height: 210px;
+      }
+
+      .red-square {
+        position: absolute;
+        top: 36px;
+        left: 42px;
+        background-color: #d83a34;
+        height: 138px;
+        width: 124px;
+      }
+
+      .lt {
+        position: absolute;
+        top: 36px;
+        left: 42px;
+      }
+
+      .triangle {
+        width: 0;
+        height: 0;
+        border-top: 70px solid transparent;
+        border-left: 47px solid #151917;
+        border-bottom: 68px solid transparent;
+        background-color: transparent;
+      }
+
+      .rt {
+        position: absolute;
+        top: 36px;
+        left: 120px;
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red-circle">
+      <div class="black-circle">
+        <div class="red-square"></div>
+        <div class="lt triangle"></div>
+        <div class="rt triangle"></div>
+      </div>
+    </div>
+  </body>
+</html>
